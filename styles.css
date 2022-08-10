@@ -190,9 +190,63 @@ section:nth-child(2n + 1) {
     vertical-align: middle;
 }
 
-
-
 /* Work Experience */
+
+.experience-container{
+    position: relative;
+    width: 40%; 
+    margin-bottom: 75px;
+}
+
+.experience-box{
+    padding: 5px;
+    min-height: 150px;
+    position: relative;
+    text-align: right;
+    /* border: 1px solid red; */
+}
+
+.experience-logo-container {
+    padding: 8px;
+}
+
+.experience-logo {
+    position: absolute;
+    width: 75px;
+    overflow: hidden;
+}
+
+.experience-logo > img {
+    width: 100%;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    padding-top: 20px;
+    color: grey;
+    line-height: 20px;
+}
+
+/* Education */
 
 .timeline {
     position: relative;
@@ -267,36 +321,6 @@ section:nth-child(2n + 1) {
     display: block;
     color: #2857a4;
 }
-
-.experience-designation {
-    font-size: 1.4rem;
-}
-
-.experience-company-name {
-    margin: 5px 0 0;
-    color: #eb822d;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-.experience-duration {
-    color: #9e9b9b;
-    font-weight: 100;
-    color: grey;
-    font-size: 1rem;
-}
-
-.experience-description {
-    font-size: 14px;
-    padding: 2px;
-    color: grey;
-    line-height: 20px;
-}
-
-
-
-
-
 
 /* Portfolio Section */
 
@@ -521,22 +545,7 @@ button:focus {
 
 
 
-/*Percentage Classes */
 
-.eighty-five-percent {
-    height: inherit;
-    width: 85%;
-}
-
-.eighty-percent {
-    height: inherit;
-    width: 80%;
-}
-
-.fifty-percent {
-    height: inherit;
-    width: 50%;
-}
 
 
 @media only screen and (max-width: 572px) {
@@ -566,9 +575,9 @@ button:focus {
         left: 10% !important;
     }
 
-    .timeline-box::after {
+    /* .timeline-box::after {
         left: -9.3% !important;
-    }
+    } */
 
     #timeline-divider {
         top: 10%;
